@@ -16,7 +16,7 @@ function Section({ Icon, title, color }) {
   };
 
   useEffect(() => {
-    if (title == "Primary") {
+    if (title === "Primary") {
       section.current.classList += " section--selected";
       section.current.style.color = color;
     }

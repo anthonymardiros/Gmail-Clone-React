@@ -15,7 +15,8 @@ function Header() {
   const dispatch = useDispatch();
 
   const signOut = () => {
-    auth.signOut()
+    auth
+      .signOut()
       .then(() => {
         dispatch(logout());
       })
@@ -35,7 +36,7 @@ function Header() {
       </div>
       <div className="header__middle">
         <SearchIcon />
-        <input type="text" placeholder="search mail" />
+        <input type="text" placeholder="Search mail" />
         <ArrowDropDown className="header__inputCaret" />
       </div>
       <div className="header__right">
