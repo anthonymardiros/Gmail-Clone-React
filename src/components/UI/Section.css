@@ -1,0 +1,17 @@
+.section {
+    display: flex ;
+    align-items: center;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: grey;
+    border-width: 0 !important;
+  }
+  
+  .section:hover {
+    background-color: whitesmoke;
+  }
+  
+  .section--selected {
+    border-width: 3px !important;
+  }
